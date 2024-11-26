@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Website</title>
+
+  <!-- =====  Bootstrap CSS  ===== -->
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+
+  <!-- =====  Custom CSS  ===== -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- =====  Font Awesome CSS  ===== -->
+  <link rel="stylesheet" href="assets/fonts/font-awesome/all.min.css">
+
+  <!-- =====  Swiper Slider CSS  ===== -->
+  <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body>
+
+
+
+  <!-- =====  Start Navbar Section  ===== -->
+
+  <nav class="navbar navbar-expand-lg navbar-light mt-4 mb-4 p-0">
+    <div class="container">
+      <a class="navbar-brand p-0 mb-1" href="javascript:void(0)">SHOP.CO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa-solid fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="javascript:void(0)" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Shop
+              <i class="fas fa-chevron-down ms-1"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="javascript:void(0)">Men</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Women</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Browse All</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="javascript:void(0)">On Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="javascript:void(0)">New Arrivals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="javascript:void(0)">Brands</a>
+          </li>
+        </ul>
+        <div class="nav-search d-flex align-items-center">
+          <i class="fa-solid fa-magnifying-glass search"></i>
+          <input type="text" placeholder="Search for products...">
+        </div>
+      </div>
+      <div class="nav-profile">
+        <i class="fa-solid fa-magnifying-glass responsive-search"></i>
+        <img src="assets/images/cart.png" class="cart" alt="">
+        <img src="assets/images/profile.png" class="profile" alt="">
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <hr>
+  </div>
+
+  <!-- =====  End Navbar Section  ===== -->
+
+
+
+  <!-- =====  Start Breadcrumb Section  ===== -->
+
+  <div class="container breadcrumb-container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb d-flex align-items-center mb-0">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <i class="fa-solid fa-chevron-right"></i>
+        <li class="breadcrumb-item" aria-current="page">Shop</li>
+        <i class="fa-solid fa-chevron-right"></i>
+        <li class="breadcrumb-item" aria-current="page">Men</li>
+        <i class="fa-solid fa-chevron-right"></i>
+        <li class="breadcrumb-item text-black" aria-current="page">T-shirts</li>
+      </ol>
+    </nav>
+  </div>
+
+  <!-- =====  End Breadcrumb Section  ===== -->
+
+
+
+  <!-- =====  Start Product Detail Section  ===== -->
+
+  <div class="container product-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12 product-images d-flex">
+          <div class="row h-100">
+            <div class="col-lg-3 col-12 p-0 product-side-div">
+              <img src="assets/images/9.png" class="product-side-img" alt="">
+              <img src="assets/images/10.png" class="product-side-img" alt="">
+              <img src="assets/images/11.png" class="product-side-img" alt="">
+            </div>
+            <div class="col-lg-9 col-12 product-main-div">
+              <img src="assets/images/9.png" class="product-main-img" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <h1 class="product-detail-h1 mb-0">One Life Graphic T<span>-</span>shirt</h1>
+          <div class="product-rating p-detail-rating d-flex">
+            <img src="assets/images/rate1.png" class="rate-star" alt="">
+            <p class="mb-0 rate-p">4.5/<span>5</span></p>
+          </div>
+          <div class="product-price p-detail-price d-flex">
+            <p class="mb-0">$260</p>
+            <p class="mb-0 fake-price">$300</p>
+            <div class="discount">-40%</div>
+          </div>
+          <p class="p-detail-des">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and
+            breathable fabric, it offers superior comfort and style.</p>
+          <hr class="p-hr">
+          <div class="p-color-section">
+            <p class="mb-0 mt-4">Select Colors</p>
+            <div class="color-circles d-flex">
+              <div class="product-color color-1">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <div class="product-color color-2"></div>
+              <div class="product-color color-3"></div>
+            </div>
+            <hr class="p-hr">
+          </div>
+          <div class="p-size-section">
+            <p class="mb-0 mt-4">Choose Size</p>
+            <div class="size-circles d-flex">
+              <div class="product-size p-small">Small</div>
+              <div class="product-size p-medium">Medium</div>
+              <div class="product-size p-large">Large</div>
+              <div class="product-size p-xl">X-Large</div>
+            </div>
+            <hr class="p-hr">
+          </div>
+          <div class="p-item-add d-flex">
+            <div class="container">
+              <div class="row w-100">
+                <div class="col-4 p-0">
+                  <div class="increase-div d-flex align-items-center justify-content-between">
+                    <i class="fa-solid fa-minus"></i>
+                    <p class="mb-0">1</p>
+                    <i class="fa-solid fa-plus"></i>
+                  </div>
+                </div>
+                <div class="col-8 p-0">
+                  <button class="p-cart-btn">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- =====  End Product Detail Section  ===== -->
+
+
+
+  <!-- =====  Bootstrap JS  ===== -->
+  <script src="assets/bootstrap/popper.min.js"></script>
+  <script src="assets/bootstrap/bootstrap.min.js"></script>
+
+
+
+  <!-- =====  Font Awesome JS  ===== -->
+  <script src="assets/fonts/font-awesome/all.min.js"></script>
+
+
+
+  <!-- =====  Swiper Slider JS  ===== -->
+  <script src="assets/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
