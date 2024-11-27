@@ -75,11 +75,19 @@
   --search-box-color: #F0F0F0;
   --discount-box-color: #FF33331A;
   --discount-text-color: #FF3333;
+  --border-color: #0000001A;
+  --light-grey-color: #00000066;
+  --dark-grey-color: #00000099;
   --white-color: #fff;
   --black-color: #000;
 }
 
 
+
+*::selection {
+  color: var(--search-box-color);
+  background-color: var(--dark-grey-color);
+}
 
 
 
@@ -116,7 +124,7 @@
 }
 
 .nav-search .search {
-  color: #00000066;
+  color: var(--light-grey-color);
 }
 
 .nav-search input {
@@ -252,17 +260,17 @@
 .customer-counter p {
   font-size: 10px;
   line-height: 22px;
-  color: #00000099;
+  color: var(--dark-grey-color);
 }
 
 .brand-counter {
   padding: 0px 30px 0px 0px !important;
-  border-right: 2px solid #0000001A !important;
+  border-right: 2px solid var(--border-color) !important;
 }
 
 .product-counter {
   padding: 0px 30px 0px 32px !important;
-  border-right: 2px solid #0000001A !important;
+  border-right: 2px solid var(--border-color) !important;
 }
 
 .customer-counter {
@@ -384,7 +392,7 @@
 .arr-view-btn {
   padding: 15px 80px;
   border-radius: 62px;
-  border: 1px solid #0000001A;
+  border: 1px solid var(--border-color);
   background-color: transparent;
 }
 
@@ -529,7 +537,7 @@
   background-size: cover;
   /* width: 32% !important; */
   height: 100% !important;
-  border: 1px solid #0000001A;
+  border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 28px 32px;
 }
@@ -556,7 +564,7 @@
   margin-top: 12px;
   font-size: 16px;
   line-height: 22px;
-  color: #00000099;
+  color: var(--dark-grey-color);
 }
 
 .prev-slide,
@@ -611,14 +619,14 @@
 
 .fa-envelope {
   font-size: 16px;
-  color: #00000066;
+  color: var(--light-grey-color);
   margin-right: 8px;
 }
 
 .email input {
   font-size: 16px;
   line-height: 21.6px;
-  color: #00000066;
+  color: var(--light-grey-color);
   background-color: transparent;
   border: none;
   outline: none;
@@ -680,7 +688,7 @@ footer {
 }
 
 .footer-para {
-  color: #00000099;
+  color: var(--dark-grey-color);
   font-size: 14px;
   line-height: 22px;
   margin-top: 25px;
@@ -726,7 +734,7 @@ footer {
 }
 
 .footer-li {
-  color: #00000099;
+  color: var(--dark-grey-color);
   font-size: 16px;
   line-height: 19px;
   margin-top: 15px;
@@ -739,7 +747,7 @@ footer {
 }
 
 .footer-bottom-p {
-  color: #00000099;
+  color: var(--dark-grey-color);
   font-size: 14px;
   line-height: 18.9px;
   margin-top: 5px;
@@ -771,14 +779,14 @@ footer {
 }
 
 .breadcrumb-item {
-  color: #00000099;
+  color: var(--dark-grey-color);
   font-size: 16px;
   line-height: 21.6px;
   margin-right: 12px;
 }
 
 .breadcrumb-item a {
-  color: #00000099;
+  color: var(--dark-grey-color);
   font-size: 16px;
   line-height: 21.6px;
   text-decoration: none;
@@ -790,7 +798,7 @@ footer {
 
 .fa-chevron-right {
   font-size: 16px;
-  color: #00000099;
+  color: var(--dark-grey-color);
   margin-right: 12px;
 }
 
@@ -810,6 +818,7 @@ footer {
 
 .product-side-img {
   width: 100%;
+  height: 155px;
   border-radius: 20px;
   background-position: center;
   margin-bottom: 14px;
@@ -827,7 +836,6 @@ footer {
 
 .product-main-img {
   width: 100%;
-  height: 100%;
   border-radius: 20px;
   margin-left: 2px;
 }
@@ -878,13 +886,13 @@ footer {
 .p-detail-des {
   font-size: 16px;
   line-height: 22px;
-  color: #00000099;
+  color: var(--dark-grey-color);
   margin: 20px 0 24px;
 }
 
 .p-color-section p,
 .p-size-section p {
-  color: #00000099;
+  color: var(--dark-grey-color);
   font-size: 16px;
   line-height: 21.6px;
 }
@@ -932,8 +940,9 @@ footer {
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 21.6px;
-  color: #00000099;
+  color: var(--dark-grey-color);
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .product-size:hover {
@@ -988,6 +997,186 @@ footer {
 }
 
 /*=====  End Product Detail Section  =====*/
+
+
+
+/*=====  Start Product Tab Section  =====*/
+
+.nav-pills .nav-link,
+.nav-pills .show>.nav-link {
+  color: var(--black-color);
+  border-bottom: 1px solid var(--border-color);
+  border-radius: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: var(--black-color);
+  background-color: transparent;
+  border-bottom: 2px solid var(--black-color);
+}
+
+.tab-p {
+  color: var(--dark-grey-color);
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.tab-p.active {
+  font-family: "Satoshi-Medium";
+}
+
+.detail-product-p {
+  margin-bottom: 5px;
+  margin-top: 16px;
+  font-family: "Satoshi-Bold";
+  font-size: 18px;
+  line-height: 32.4px;
+}
+
+.detail-product-p-2 {
+  margin-top: 32px;
+}
+
+.tab-review-h2 {
+  font-family: "Satoshi-Bold";
+  font-size: 24px;
+  line-height: 32.4px;
+  margin-top: 15px;
+  margin-bottom: 32px;
+}
+
+.tab-review-h2 span {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--dark-grey-color);
+}
+
+.tab-review-btn {
+  padding: 13px 29.5px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border-radius: 62px;
+  border: 2px solid transparent;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-family: "Satoshi-Medium";
+  font-size: 16px;
+  line-height: 21.6px;
+  transition: all 0.3s;
+}
+
+.tab-review-btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--black-color);
+  color: var(--black-color);
+}
+
+.review-tab-col {
+  margin-bottom: 20.42px;
+}
+
+.review-tab-col:nth-last-of-type(-n+2) {
+  margin-bottom: 0px;
+}
+
+.fifth-review-box {
+  margin-bottom: 0px;
+}
+
+.review-tab-card {
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 28px 32px;
+  height: 100%;
+}
+
+.review-tab-rate {
+  width: 23%;
+  margin-bottom: 15px;
+}
+
+.review-tab-name {
+  font-family: "Satoshi-Bold";
+  font-size: 20px;
+  line-height: 22px;
+  margin-bottom: 12px !important;
+}
+
+.review-tab-p,
+.review-tab-date {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--dark-grey-color);
+}
+
+.product-load-more-btn {
+  border-radius: 62px;
+  border: 1px solid var(--border-color);
+  padding: 15px 45px;
+  font-family: "Satoshi-Medium";
+  font-size: 16px;
+  line-height: 21.6px;
+  width: fit-content;
+  margin-top: 36.42px;
+  cursor: pointer;
+}
+
+.accordion.accordion-flush {
+  margin-top: 16px;
+}
+
+.accordion-collapse {
+  overflow: hidden;
+}
+
+.accordion-body {
+  padding: 0 20px 16px 20px;
+  font-size: 16px;
+}
+
+.accordion-button {
+  font-size: 18px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button:hover {
+  color: #0c63e4;
+}
+
+/*=====  End Product Tab Section  =====*/
+
+
+
+/*=====  Start Related Product Section  =====*/
+
+.related-products {
+  margin-top: 64px;
+}
+
+.releted-products-row {
+  margin-bottom: 160px;
+}
+
+.related-products-name {
+  font-family: "Satoshi-Bold";
+  font-size: 14px;
+  line-height: 27px;
+  text-decoration: none;
+  color: var(--black-color);
+}
+
+/*=====  End Related Product Section  =====*/
 
 /*?===== End Product Detail Page  =====?*/
 
@@ -1129,6 +1318,7 @@ footer {
     /* gap: 20px; */
     margin-top: 12px;
     justify-content: space-between;
+    flex-direction: row !important;
   }
 
   .product-side-div img {
@@ -1149,6 +1339,10 @@ footer {
 
   .p-detail-rating {
     margin: 12px 0 12px;
+  }
+
+  .releted-products-row {
+    margin-bottom: 230px;
   }
 
   /*?  C - Width <= 992px || B - 992px to 1200px lg :- (Desktops, Laptops, Large Tablets)  ?*/
@@ -1211,6 +1405,10 @@ footer {
     right: -15px;
   }
 
+  .arr-row {
+    margin: 32px 0 24px;
+  }
+
   .arrivals-heading {
     margin-top: 50px;
     font-size: 32px;
@@ -1220,6 +1418,10 @@ footer {
   .arr-view-btn {
     width: 100%;
     padding: 13.5px auto;
+  }
+
+  .selling-heading {
+    margin-top: 40px;
   }
 
   /* .dress-container {
@@ -1355,6 +1557,63 @@ footer {
     margin-bottom: 50px;
   }
 
+  .review-tab-col {
+    margin-bottom: 16px;
+  }
+
+  .review-tab-col:nth-last-of-type(2) {
+    margin-bottom: 16px;
+  }
+
+  .tab-p {
+    font-size: 16px;
+  }
+
+  .tab-review-h2 {
+    font-size: 20px;
+  }
+
+  .tab-review-h2 span {
+    font-size: 14px;
+  }
+
+  .tab-review-btn {
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 16.2px;
+  }
+
+  .review-none {
+    display: none;
+  }
+
+  .product-load-more-btn {
+    margin-top: 20px;
+    padding: 14px 36px;
+    font-size: 14px;
+    line-height: 18.9px;
+  }
+
+  .accordion-body {
+    font-size: 13px;
+  }
+
+  .accordion-button {
+    font-size: 15px;
+  }
+
+  .releted-products-row {
+    margin: 40px 0 50px;
+  }
+
+  .related-products {
+    margin-top: 50px;
+  }
+
+  .releted-products-row {
+    margin-bottom: 230px;
+  }
+
   /*?  C - Width <= 768px || B - 768px to 992px md :- (Tablets and small desktops)  ?*/
 }
 
@@ -1394,6 +1653,14 @@ footer {
     margin-bottom: 24px !important;
   }
 
+  .product-name a {
+    font-size: 20px;
+  }
+
+  .rate-p {
+    font-size: 16px;
+  }
+
   .banner-counter {
     flex-wrap: wrap;
     margin-top: 20px;
@@ -1426,6 +1693,32 @@ footer {
 
   .increase-div {
     padding: 12px 16px;
+  }
+
+  /* ********** */
+
+  .review-tab-card {
+    padding: 24px;
+  }
+
+  .review-tab-rate {
+    margin-bottom: 12px;
+  }
+
+  .review-tab-name {
+    margin-bottom: 8px !important;
+  }
+
+  .review-tab-p {
+    margin-bottom: 16px !important;
+  }
+
+  .related-products-name {
+    font-size: 20px;
+  }
+
+  .releted-products-row {
+    margin-bottom: 202px;
   }
 
   /*?  C - Width <= 576px || B - 576px to 768px sm :- (Landscape and Portrait mobiles)  ?*/
@@ -1470,6 +1763,42 @@ footer {
     padding: 10px 15px;
   }
 
+  /* ********** */
+
+  .tab-p {
+    font-size: 12px;
+  }
+
+  /* ********** */
+
+  .accordion-body {
+    font-size: 11px;
+  }
+
+  .accordion-button {
+    font-size: 13px;
+  }
+
 }
 
 /* =====  End Media Queries Section  ===== */
+
+
+
+/* =====  Start Scrollbar Section  ===== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--black-color);
+  border-radius: 50px;
+  height: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--dark-grey-color);
+}
+
+/* =====  End Scrollbar Section  ===== */
