@@ -180,6 +180,10 @@
   margin: 10px 0;
 }
 
+.nav-hr {
+  margin: 24px auto;
+}
+
 /*=====  End Navbar Section  =====*/
 
 
@@ -461,7 +465,7 @@
   height: 280px;
 }
 
-.categories-col p {
+.categories-col p a {
   font-family: 'satoshi-bold';
   font-size: 34px;
   color: var(--black-color);
@@ -469,6 +473,7 @@
   position: absolute;
   top: 25px;
   left: 36px;
+  text-decoration: none;
 }
 
 .categories-col1 {
@@ -1182,6 +1187,196 @@ footer {
 
 
 
+/*?===== Start Cart Page  =====?*/
+
+/*=====  Start Cart Product Section  =====*/
+
+.cart-product {
+  margin-bottom: 162px;
+}
+
+.cart-breadcrumb {
+  margin-bottom: 24px;
+}
+
+.cart-h1 {
+  text-align: left;
+  margin: 0 0 24px;
+  padding: 0;
+}
+
+.cart-card {
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 20px 24px;
+}
+
+.cart-product-img {
+  width: 124px;
+  height: 124px;
+  border-radius: 8.66px;
+}
+
+.cart-product-data {
+  margin-left: 16px;
+}
+
+.cart-product-name {
+  font-family: "Satoshi-Bold";
+  font-size: 16px;
+  line-height: 27px;
+  margin-top: 3px;
+}
+
+.cart-product-size,
+.cart-product-color {
+  font-size: 14px;
+  line-height: 18.9px;
+  margin-top: 2px;
+}
+
+.cart-product-size span,
+.cart-product-color span {
+  color: var(--dark-grey-color);
+}
+
+.cart-product-price {
+  font-family: "Satoshi-Bold";
+  font-size: 20px;
+  line-height: 32.4px;
+  margin: 15px 0 0 16px !important;
+}
+
+.fa-trash-can {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FF3333;
+  cursor: pointer;
+}
+
+.cart-increase-div {
+  padding: 12px 20px;
+  width: 126px;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.increase-div p {
+  font-size: 14px;
+  line-height: 18.9px;
+}
+
+.cart-increase-div .fa-minus,
+.cart-increase-div .fa-plus {
+  font-size: 20px;
+}
+
+.cart-card hr {
+  margin: 24px 0;
+}
+
+.cart-order-h3 {
+  font-family: "Satoshi-Bold";
+  font-size: 20px;
+  line-height: 32.4px;
+  margin-bottom: 24px;
+}
+
+.cart-order-total-div {
+  margin-bottom: 20px;
+}
+
+.cart-order-p {
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--dark-grey-color);
+}
+
+.cart-order-price {
+  font-family: "Satoshi-Bold";
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.cart-discount {
+  color: #FF3333;
+}
+
+.order-hr {
+  margin: 20px 0 !important;
+}
+
+.cart-promo-code {
+  background-color: var(--search-box-color);
+  border-radius: 62px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-tag {
+  font-size: 20px;
+  color: var(--light-grey-color);
+  margin-right: 12px;
+}
+
+.cart-promo-code input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: var(--light-grey-color);
+}
+
+.cart-order-apply-btn {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: 2px solid transparent;
+  border-radius: 62px;
+  padding: 12px 0;
+  width: 100%;
+  font-family: "Satoshi-Medium";
+  font-size: 14px;
+  line-height: 21.6px;
+  transition: all 0.3s;
+}
+
+.cart-order-apply-btn:hover,
+.cart-checkout-btn:hover {
+  background-color: transparent;
+  color: var(--black-color);
+  border: 2px solid var(--black-color);
+}
+
+.cart-checkout-btn {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: 2px solid transparent;
+  border-radius: 62px;
+  padding: 14px 0;
+  width: 100%;
+  font-family: "Satoshi-Medium";
+  font-size: 14px;
+  line-height: 21.6px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+.cart-checkout-btn .fa-arrow-right.icons {
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+/*=====  End Cart Product Section  =====*/
+
+/*?===== End Cart Page  =====?*/
 
 
 /* =====  Start Media Queries Section  ===== */
@@ -1345,6 +1540,16 @@ footer {
     margin-bottom: 230px;
   }
 
+  /* ********** */
+
+  .cart-product {
+    margin-bottom: 230px;
+  }
+
+  .apply-btn-col {
+    padding-right: 12px !important;
+  }
+
   /*?  C - Width <= 992px || B - 992px to 1200px lg :- (Desktops, Laptops, Large Tablets)  ?*/
 }
 
@@ -1359,6 +1564,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .nav-hr {
+    margin: 20px auto;
+  }
 
   .banner-h1 {
     font-size: 36px;
@@ -1612,6 +1821,119 @@ footer {
 
   .releted-products-row {
     margin-bottom: 230px;
+  }
+
+  /* ********** */
+
+  .cart-product {
+    margin-bottom: 202px;
+  }
+
+  .cart-breadcrumb {
+    margin: 0 auto;
+  }
+
+  .cart-h1 {
+    margin: 8px 0 20px;
+  }
+
+  .cart-card {
+    padding: 14px;
+  }
+
+  .order-col .cart-card {
+    padding: 20px;
+  }
+
+  .cart-product-data {
+    margin-left: 14px;
+  }
+
+  .cart-product-name {
+    font-family: "Satoshi-Bold";
+    font-size: 14px;
+    line-height: 21.6px;
+    margin-top: 0px;
+  }
+
+  .cart-product-size,
+  .cart-product-color {
+    font-size: 12px;
+    line-height: 16.2px;
+    margin-top: 1px;
+  }
+
+  .cart-product-price {
+    font-family: "Satoshi-Bold";
+    font-size: 20px;
+    line-height: 27px;
+    margin: 13px 0 0 16px !important;
+  }
+
+  .cart-increase-div {
+    padding: 7.5px 13.5px;
+  }
+
+  .cart-increase-div .fa-minus,
+  .cart-increase-div .fa-plus {
+    font-size: 16px;
+  }
+
+  .cart-card hr {
+    margin: 16px 0;
+  }
+
+  .order-col {
+    margin-top: 20px;
+  }
+
+  .cart-order-h3 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 16px;
+  }
+
+  .cart-order-p {
+    font-size: 14px;
+    line-height: 21.6px;
+  }
+
+  .cart-order-price {
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+
+  .cart-promo-container {
+    padding: 0;
+  }
+
+  .cart-promo-row {
+    margin: 16px 0 !important;
+  }
+
+  .fa-tag {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .cart-promo-code input {
+    font-size: 14px;
+    line-height: 18.9px;
+  }
+
+  .apply-btn-col {
+    padding-right: 0px !important;
+  }
+
+  .cart-order-apply-btn {
+    font-size: 14px;
+    line-height: 18.9px;
+  }
+
+  .cart-checkout-btn {
+    margin-bottom: 0;
+    padding: 12px 0;
+    line-height: 18.9px;
   }
 
   /*?  C - Width <= 768px || B - 768px to 992px md :- (Tablets and small desktops)  ?*/

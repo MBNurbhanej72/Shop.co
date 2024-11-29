@@ -29,10 +29,10 @@ var swiper = new Swiper(".reviewSwiper", {
       spaceBetween: 20,
     },
   },
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     prevEl: ".prev-slide",
     nextEl: ".next-slide",
